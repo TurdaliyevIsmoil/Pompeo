@@ -1,11 +1,22 @@
-# Poppero react template
-> Technologies: Reactjs, react-scroll, HTML, SCSS
+# Pompeo React js Template
 
-### Online version: https://pompeoov.web.app/
+> Technologies: ReactJs(react-scroll, reactTransitionGroup)
 
-## Using
-> npm i (node package manager)
+## https://pompeoov.web.app/ You can see this proyect in hosting
 
-> npm start (starting dev server)
+## Available Scripts
 
-> npm run buld (production)
+> In the project directory, you can run:
+
+### `npm start`
+
+> Runs the app in the development mode.\
+Open [http://localhost:3000]
+
+### `npm run build`
+
+> For deployment
+
+## My social links
+
+> <a href="https://t.me/ismoilTurdaliyev">Telegram</a>
