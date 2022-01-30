@@ -1,0 +1,127 @@
+.hero-section {
+  background-image: url(../../images/hero-bg.png);
+  background-size: cover;
+  min-height: calc(100vh - 80px);
+  @media screen and (max-width: 575px) {
+    min-height: auto;
+  }
+  & > .hero-inner {
+    justify-content: space-between;
+    margin: 40px auto;
+
+    .first-column {
+      .title {
+        margin-top: 12px;
+        width: fit-content;
+        position: relative;
+        img {
+          position: absolute;
+          width: 40px;
+          right: -40px;
+          top: -20px;
+        }
+      }
+      p {
+        font-family: Libre Franklin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 12px;
+        color: #6c6c6c;
+      }
+    }
+    .second-column {
+      img {
+        width: 700px;
+        margin-right: -80px;
+      }
+    }
+    // Query media
+
+    @media screen and (max-width: 1199px) {
+      .second-column {
+        img {
+          width: 600px !important;
+        }
+      }
+    }
+    @media screen and (max-width: 991px) {
+      .second-column {
+        img {
+          width: 500px !important;
+          margin-right: -150px !important;
+        }
+      }
+      .first-column {
+        .title {
+          img {
+            width: 30px !important;
+          }
+        }
+        p {
+          font-size: 13px !important;
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+      .second-column {
+        padding-top: 40px;
+        img {
+          width: 500px !important;
+          margin-right: 0 !important;
+        }
+      }
+      .first-column {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+        .title {
+          text-align: center;
+          img {
+            right: -30px !important;
+            top: -10px !important;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 575px) {
+      margin: 40px auto;
+      .second-column {
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 100% !important;
+        }
+      }
+      .first-column {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+        .title {
+          img {
+            right: -30px !important;
+            top: -10px !important;
+          }
+        }
+        p {
+          max-width: 80%;
+          margin-top: 20px !important;
+          text-align: center;
+        }
+      }
+    }
+    @media screen and (max-width: 380px) {
+      .first-column > .title > img {
+        display: none !important;
+      }
+    }
+  }
+}

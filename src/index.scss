@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap");
+// Global styles
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// Global Classes
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+  @media (min-width: 1400px) {
+    max-width: 1320px;
+  }
+}
+
+.topline {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #d77474;
+  @media screen and (max-width: 991px) {
+    .topline {
+      font-size: 14px !important;
+    }
+  }
+}
+.title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  color: #000000;
+  &.big{
+    font-size: 42px;
+  }
+  @media screen and (max-width: 991px) {
+    font-size: 36px !important;
+  }
+  @media screen and (max-width: 575px) {
+    font-size: 32px !important;
+    line-height: 38px !important;
+  }
+}
+.button {
+  padding: 20px 30px;
+  cursor: pointer;
+  background: #ac1313;
+  border-radius: 0px;
+  margin-top: 40px;
+  border: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  &.black{
+      background-color: #000;
+  }
+  @media screen and (max-width: 991px) {
+    padding: 15px 30px !important;
+  }
+  @media screen and (max-width: 575px) {
+    padding: 12px 25px !important;
+  }
+}
