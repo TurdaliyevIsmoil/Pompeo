@@ -1,6 +1,7 @@
 .about {
   & > .about-inner {
-    margin: 60px auto;
+    margin: 80px auto;
+    position: relative;
     & > .title,
     .topline {
       text-align: center;
@@ -9,7 +10,9 @@
       margin-top: 12px;
       word-spacing: 10px;
       img {
-        width: 45px;
+        @media screen and (max-width: 400px) {
+          display: none;
+        }
       }
     }
     & > .offers {
@@ -17,16 +20,37 @@
       justify-content: space-around;
       align-items: center;
       width: 100%;
-      margin: 40px auto;
+      margin: 80px auto;
+      @media screen and (max-width: 767px) {
+        .offer {
+          width: 150px !important;
+          height: 150px !important;
+          img {
+            width: 40px !important;
+          }
+        }
+      }
+      @media screen and (max-width: 575px) {
+        flex-direction: column;
+        margin: 60px auto;
+        gap: 40px;
+        .offer {
+          width: 200px !important;
+          height: 200px !important;
+          img {
+            width: 60px !important;
+          }
+        }
+      }
       .offer {
         &:first-child {
           background: #e4b366 !important;
         }
         &:nth-child(2) {
-          background: #F05B10 !important;
+          background: #f05b10 !important;
         }
         &:nth-child(3) {
-          background: #A21010 !important;
+          background: #a21010 !important;
         }
         flex-direction: column;
         gap: 5px;
@@ -43,8 +67,113 @@
         letter-spacing: 2px;
         text-transform: uppercase;
         color: #ffffff;
-        img{
-            width: 60px;
+        img {
+          width: 60px;
+        }
+      }
+    }
+    & > .offer-description {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      @media screen and (max-width: 991px) {
+        flex-direction: column;
+        & > div {
+          width: 100% !important;
+          .title {
+            br {
+              display: none !important;
+            }
+            font-size: 24px !important;
+            line-height: 24px !important;
+          }
+          p {
+            max-width: 100% !important;
+            margin-top: 20px !important;
+          }
+        }
+      }
+      @media screen and (max-width: 560px) {
+        & > div .title {
+          line-height: 32px !important;
+          br {
+            display: block !important;
+          }
+        }
+      }
+      & > div {
+        width: 50%;
+        padding: 20px;
+        .title {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: bold;
+          line-height: 30px;
+        }
+        P {
+          margin-top: 20px;
+          max-width: 90%;
+        }
+      }
+    }
+    & > .products {
+      & > .product {
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        @media screen and (max-width: 991px) {
+          .column {
+            width: 50% !important;
+            p {
+              margin-top: 0 !important;
+            }
+            .bold {
+              margin-top: 10px !important;
+            }
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .flex-center {
+            justify-content: flex-start !important;
+            img {
+              margin: 0 !important;
+            }
+          }
+          flex-direction: column !important;
+          padding-top: 20px !important;
+          .column {
+            width: 100% !important;
+            img {
+              width: 70% !important;
+            }
+          }
+        }
+        @media screen and (max-width: 575px) {
+          .flex-center {
+            justify-content: center !important;
+            img {
+              margin: 0 auto !important;
+            }
+          }
+          .column > img {
+            width: 90% !important;
+          }
+        }
+        &.img-first {
+          flex-direction: row;
+        }
+        .column {
+          width: 40%;
+          padding: 20px;
+          img {
+            width: 100%;
+            margin: 0 auto;
+          }
+          .bold {
+            cursor: pointer;
+            width: fit-content;
+            margin-top: 30px;
+          }
         }
       }
     }

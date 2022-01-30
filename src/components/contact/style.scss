@@ -1,0 +1,96 @@
+.contact {
+  & > .container {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .topline {
+      margin-top: 40px;
+    }
+    .title {
+      margin-top: 10px;
+      font-weight: 300;
+      br {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 575px) {
+      br {
+        display: block !important;
+      }
+      .title {
+        text-align: center;
+        img {
+          display: none !important;
+        }
+      }
+      form {
+        input[type="email"] {
+          width: 200px !important;
+          padding: 10px 20px !important;
+        }
+        button {
+          padding: 12px 20px !important;
+        }
+      }
+    }
+    form {
+      margin-top: 40px;
+      input[type="email"] {
+        @media screen and (max-width: 340px) {
+          width: 170px !important;
+        }
+        width: 300px;
+        color: rgb(49, 49, 49);
+        padding: 14px 15px;
+        border: 1px solid #d8d8d8;
+        font-size: 14px;
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        cursor: pointer;
+        padding: 16px 40px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        transition: all 0.3s;
+        &:hover {
+          background-color: #ac1313;
+        }
+      }
+      input[type="checkbox"] {
+        display: none;
+        &:checked ~ label::before {
+          background-color: #8534ff;
+          border: 2px solid #fff0;
+        }
+      }
+      label {
+        margin-top: 40px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #a1a1a1;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          left: -30px;
+          top: 0;
+          border: 2px solid rgb(219, 219, 219);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.absolute-text {
+  position: Absolute;
+  height: 100%;
+  width: fit-content;
+  width: 80px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #c7c7c7;
+  @media screen and (max-width:991px) {
+      display: none;
+  }
+  div {
+    width: fit-content;
+    white-space: nowrap;
+    transform: rotate(-90deg) !important;
+  }
+  text-align: center;
+  top: 0;
+  &.left {
+    left: -100px;
+  }
+  &.right {
+    right: -100px;
+  }
+}

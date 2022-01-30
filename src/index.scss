@@ -7,7 +7,27 @@
   margin: 0;
 }
 
-// Global Classes
+body{
+  overflow-x: hidden;
+}
+
+hr {
+  background-color: #ebebeb;
+  height: 2px;
+  border: none;
+}
+.bold {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  &.red{
+    color: #AC1313;
+  }
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -61,17 +81,48 @@
   font-size: 36px;
   line-height: 50px;
   color: #000000;
-  &.big{
+  &.big {
     font-size: 42px;
+  }
+  &.small {
+    font-size: 24px;
   }
   @media screen and (max-width: 991px) {
     font-size: 36px !important;
+    &.small {
+      font-size: 20px !important;
+    }
   }
   @media screen and (max-width: 575px) {
     font-size: 32px !important;
     line-height: 38px !important;
+    &.small {
+      font-size: 20px !important;
+    }
   }
 }
+
+.paragraph {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 12px;
+  color: #6c6c6c;
+  &.small {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  @media screen and (max-width: 991px) {
+    font-size: 13px !important;
+    &.small {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
 .button {
   padding: 20px 30px;
   cursor: pointer;
@@ -86,9 +137,13 @@
   line-height: 22px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: all .3s;
   color: #ffffff;
-  &.black{
-      background-color: #000;
+  &.black {
+    background-color: #000;
+  }
+  &:hover{
+    background-color: rgb(114, 114, 114);
   }
   @media screen and (max-width: 991px) {
     padding: 15px 30px !important;

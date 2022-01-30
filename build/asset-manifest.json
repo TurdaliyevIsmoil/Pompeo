@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f5d9c714.css",
+    "main.js": "/static/js/main.39e959a7.js",
+    "static/media/ready-to-shop.png": "/static/media/ready-to-shop.f94fd569e7452b9964a6.png",
+    "static/media/hero.png": "/static/media/hero.3152c5fea759f17a9bd4.png",
+    "static/media/collection-1.png": "/static/media/collection-1.4bbc286c45b41428e4dc.png",
+    "static/media/hero-bg.png": "/static/media/hero-bg.6f13502030406cd10c66.png",
+    "static/media/collection-5.png": "/static/media/collection-5.48d0c1ee6f67b99d4a04.png",
+    "static/media/gold-pottery.png": "/static/media/gold-pottery.feeaab459008914a0b16.png",
+    "static/media/orance-ceramic.png": "/static/media/orance-ceramic.3e44c4a45c24b2155af1.png",
+    "static/media/collection-6.png": "/static/media/collection-6.a4b044687dcff5328273.png",
+    "static/media/collection-3.png": "/static/media/collection-3.32c03d231b16e632af86.png",
+    "static/media/collection-4.png": "/static/media/collection-4.4d3ee635c11e4d545371.png",
+    "static/media/collection-2.png": "/static/media/collection-2.dbe05e5ee942a330a614.png",
+    "static/media/logo.svg": "/static/media/logo.b5786f012e4723404a9582e3f84c716a.svg",
+    "static/media/hero-title-&.svg": "/static/media/hero-title-&.21e30557430be34452f40087772133be.svg",
+    "index.html": "/index.html",
+    "main.f5d9c714.css.map": "/static/css/main.f5d9c714.css.map",
+    "main.39e959a7.js.map": "/static/js/main.39e959a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5d9c714.css",
+    "static/js/main.39e959a7.js"
+  ]
+}

@@ -9,8 +9,9 @@ const Navbar = () => {
     const [mobile, setmobile] = useState(false);
     const toggle = () => setmobile((prev) => !prev)
     return (
-        <nav className='navbar flex-center'>
+        <><nav className='navbar flex-center'>
             <div className="container navbar-inner">
+
                 <div className="logo flex-center">
                     <img src={logo} alt="Logo" />
                 </div>
@@ -19,26 +20,28 @@ const Navbar = () => {
                 </div>
                 <menu className={`menu flex-center ${mobile ? 'opened' : 'closed'}`}>
                     <li>
-                        <Link to='hero'>Home</Link>
+                        <Link to='hero' onClick={toggle} spy={true} smooth={true} offset={-80} >Home</Link>
                     </li>
                     <li>
-                        <Link to='hero'>About</Link>
+                        <Link to='about' onClick={toggle} spy={true} smooth={true} offset={-80} >About</Link>
                     </li>
                     <li>
-                        <Link to='hero'>Shop</Link>
+                        <Link to='shop' onClick={toggle} spy={true} smooth={true} offset={-80} >Shop</Link>
                     </li>
                     <li>
-                        <Link to='hero'>contact</Link>
+                        <Link to='contact' onClick={toggle} spy={true} smooth={true} offset={-80} >contact</Link>
                     </li>
                     <div className={`closer-mobile ${mobile ? 'block' : 'none'}`}>
                         <FaTimes onClick={toggle} />
                     </div>
                     <li>
-                        <Link to='hero' className='flex-center'><HiOutlineShoppingCart /> cart</Link>
+                        <Link className='flex-center'><HiOutlineShoppingCart /> cart</Link>
                     </li>
                 </menu>
             </div>
-        </nav>
+        </nav> <div className="place"></div>
+        </>
+
     );
 }
 

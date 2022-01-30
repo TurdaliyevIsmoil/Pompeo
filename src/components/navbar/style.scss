@@ -1,5 +1,11 @@
 .navbar {
   height: 80px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
   & > .navbar-inner {
     display: flex;
     justify-content: space-between;
@@ -13,7 +19,7 @@
       cursor: pointer;
       display: none;
       @media screen and (max-width: 767px) {
-          display: block;
+        display: block;
       }
     }
     .menu {
@@ -91,7 +97,11 @@
           letter-spacing: 2px;
           color: #6c6c6c;
           text-transform: uppercase;
+          transition: all 0.3s;
           cursor: pointer;
+          &.active {
+            color: #ac1313;
+          }
           &:hover {
             color: #ac1313;
           }
@@ -108,7 +118,9 @@
     }
   }
 }
-
+.place {
+  height: 80px;
+}
 @keyframes openMenu {
   0% {
     display: flex;

@@ -8,7 +8,6 @@
   & > .hero-inner {
     justify-content: space-between;
     margin: 40px auto;
-
     .first-column {
       .title {
         margin-top: 12px;
@@ -21,15 +20,6 @@
           top: -20px;
         }
       }
-      p {
-        font-family: Libre Franklin;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 26px;
-        margin-top: 12px;
-        color: #6c6c6c;
-      }
     }
     .second-column {
       img {
@@ -37,8 +27,6 @@
         margin-right: -80px;
       }
     }
-    // Query media
-
     @media screen and (max-width: 1199px) {
       .second-column {
         img {
